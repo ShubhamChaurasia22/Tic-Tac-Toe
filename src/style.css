@@ -1,0 +1,43 @@
+.icon{
+    color: red;
+    font-size: 30px;
+}
+body{
+    background: linear-gradient(to right, #379683, #5CDB95);
+    color:#EDF5E1;
+    text-align:center;
+    align-items:center;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color:transparent;
+    margin-top:30px;
+}
+.box{
+    width:auto;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.button{
+    background-color:#379683;
+    color:#EDF5E1;
+    cursor: pointer;
+    border: 1px solid #EDF5E1;
+    font-weight: bold;
+    font-family: Segoe UI;
+    margin-bottom:15px;
+}
+.button:hover{
+    background-color:#0ed468;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Segoe UI;
+}
+
