@@ -24,28 +24,28 @@ const App = () => {
         tictacArray.fill("")
     }
     const findWinner=()=>{
-        if(tictacArray[0]==tictacArray[1]&&tictacArray[0]==tictacArray[2] && tictacArray[0]!=""){
+        if(tictacArray[0]===tictacArray[1]&&tictacArray[0]===tictacArray[2] && tictacArray[0]!==""){
             setWinMessage(tictacArray[0]+" has won")
         }
-        else if(tictacArray[3]== tictacArray[4] && tictacArray[3]== tictacArray[5] && tictacArray[3]!=""){
+        else if(tictacArray[3]=== tictacArray[4] && tictacArray[3]=== tictacArray[5] && tictacArray[3]!==""){
             setWinMessage(tictacArray[3]+" has won")
         }
-        else if(tictacArray[6]== tictacArray[7] && tictacArray[6]== tictacArray[8] && tictacArray[6]!=""){
+        else if(tictacArray[6]=== tictacArray[7] && tictacArray[6]=== tictacArray[8] && tictacArray[6]!==""){
             setWinMessage(tictacArray[6]+" has won")
         }
-        else if(tictacArray[0]== tictacArray[3] && tictacArray[0]== tictacArray[6] && tictacArray[0]){
+        else if(tictacArray[0]=== tictacArray[3] && tictacArray[0]=== tictacArray[6] && tictacArray[0]){
             setWinMessage(tictacArray[0]+" has won")
         }
-        else if(tictacArray[1]== tictacArray[4] && tictacArray[1]== tictacArray[7] && tictacArray[1]){
+        else if(tictacArray[1]=== tictacArray[4] && tictacArray[1]=== tictacArray[7] && tictacArray[1]){
             setWinMessage(tictacArray[1]+" has won")
         }
-        else if(tictacArray[2]== tictacArray[5] && tictacArray[2]== tictacArray[8] && tictacArray[2]){
+        else if(tictacArray[2]=== tictacArray[5] && tictacArray[2]=== tictacArray[8] && tictacArray[2]){
             setWinMessage(tictacArray[2]+" has won")
         }
-        else if(tictacArray[0]== tictacArray[4] && tictacArray[0]== tictacArray[8] && tictacArray[0]){
+        else if(tictacArray[0]=== tictacArray[4] && tictacArray[0]=== tictacArray[8] && tictacArray[0]){
             setWinMessage(tictacArray[0]+" has won")
         }
-        else if(tictacArray[2]== tictacArray[4] && tictacArray[2]== tictacArray[6] && tictacArray[2]){
+        else if(tictacArray[2]=== tictacArray[4] && tictacArray[2]=== tictacArray[6] && tictacArray[2]){
             setWinMessage(tictacArray[2]+" has won")
         }   
     }
@@ -54,7 +54,7 @@ const App = () => {
         if(winMessage){
             return toast("Game Has Already Got Over", {type:"success"})
         }
-        if(tictacArray[index]==""){
+        if(tictacArray[index]===""){
             tictacArray[index] = isCross ? "cross" : "circle"
             setIsCross(!isCross)
         }
